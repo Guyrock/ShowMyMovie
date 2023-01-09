@@ -155,7 +155,7 @@ class MainActivity : AppCompatActivity() {
                 if(castShimmer.isShimmerVisible){
                     castShimmer.stopShimmer()
                     castShimmer.visibility = View.INVISIBLE
-                    castRvStub.inflate()
+                    castRvStub.visibility = View.VISIBLE
                     castRV.apply {
                         layoutManager = LinearLayoutManager(this@MainActivity,LinearLayoutManager.HORIZONTAL,false)
                         setHasFixedSize(true)

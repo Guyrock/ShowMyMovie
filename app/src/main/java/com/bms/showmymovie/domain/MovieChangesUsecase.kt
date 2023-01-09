@@ -24,7 +24,7 @@ class MovieChangesUsecase @Inject constructor(
 
     private fun checkForChanges(data: MovieDetailChanges, currentMovieDetail: MovieDetail): ApiResult<MovieDetail> {
         var changes = false
-        //check for changes in object
+        //check for changes in movieDetails
         data.changes.forEach{ dataChange ->
             when(dataChange.key){
                 "overview" ->{
